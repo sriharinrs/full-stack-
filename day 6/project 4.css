@@ -1,0 +1,73 @@
+body{
+    margin :0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+.container{
+  
+   text-align: center;
+    margin: 100px 50px;
+    margin-left: 70px;
+    text-align: left;
+
+    
+    
+.header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px;
+    line-height: 30px;
+   
+}
+
+
+h3{
+    font-size: 30px;
+}
+
+.profession{
+    margin:40px 0px;
+    color:brown;
+    font-size: 25px;
+}
+
+}
+h1{
+    font-size: 70px;
+    margin: 40px 0px;
+}
+.image {
+    margin-left:300px;
+    margin-top: 10px;
+    width: 300px;
+    heigth: 200px;
+    border-radius: 50%;
+    object-fit: covers;
+}
+.line {
+    
+    width: 80px;
+    height: 1px;
+    margin: 40px 0px;
+    background-color: brown;
+    border: 2px solid brown;
+    border-radius: 2px;
+}
+.about{
+    width: 370px;
+    height:300px;
+   
+    margin-left: 70px;
+    text-align: left;
+}
+
+.content{
+    line-height: 2;
+    color: brown;
+}
+
+hr{
+    width: 80%;
+    background-color: brown;
+}
