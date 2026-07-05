@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning</title>
+        <style>
+            body{
+                margin: 0;
+            }
+            .box{
+                width:200px;
+                height:200px;
+                background: lightblue;
+                 margin-top: 10px;
+            }
+            span{
+                display: inline;
+                background-color: lightgreen;
+                padding: 5px;
+                
+            }
+            .inline-box{
+                display: inline-block;
+                width: 120px;
+                height: 80px;
+                background-color: orange;
+                margin: 10px;
+                text-align: center;
+                line-height: 80px;
+                font-weight: bold;
+            }
+
+            .hide{
+                display: none;
+            }
+
+            .relative-box{
+                width: 120px;
+                height: 80px;
+                background: tomato;
+                color: white;
+                positive: relative;
+                margin-left:50px;
+                margin-top:20px;
+                text-align: center;
+                line-height: 80px;
+                margin-bottom: 40px;
+            }
+
+            .parent{
+                position: relative;
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                margin-top: 30px;
+            }
+            .Absolute{
+                position: absolute;
+                margin: 30px 20px 0 50px;
+                color: white;
+                width: 100px;
+                height: 60px;
+                background-color: purple;
+                text-align: center;
+                line-height: 60px;
+            }
+
+            .navbar{
+                width: 100%;
+                height: 25px;
+                background-color: grey;
+                position: fixed;
+                margin: 0;
+                color: white;
+                text-align: center;
+                padding :15px;
+                z-index: 1000;
+            }
+
+            .sticky{
+                position:sticky;
+                background-color: crimson;
+                color: white;
+                padding: 10px;
+                margin-top: 60px;
+            }
+
+            .scroll{
+                height: 800px;
+            }
+
+            .task9{
+                position: relative;
+                border:2px solid black;
+                padding: 20px;
+                margin-bottom: 40px;
+                height: 180px;
+            }
+
+            .box{
+                display: inline-block;
+                width:100px;
+                height: 100px;
+                background-color: lightblue;
+                text-align: center;
+                line-height: 100px;
+                margin-right: 10px;
+
+            }
+
+            .position-box{
+                position: absolute;
+                margin-top: 20px;
+                margin-right: 20px;
+                width: 100px;
+                height: 100px;
+                background-color: tomato;
+                color: white;
+                text-align: center;
+                line-height: 100px;
+            }
+            
+            .header{
+                position: absolute;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 15px;
+            }
+
+            
+            .layout{
+                position: relative;
+                margin-top: 80px;
+                min-height: 400px;
+            }
+
+            .sidebar{
+                position:absolute;
+                left:0;
+                top: 0;
+                width: 180px;
+                height: 250px;
+                background-color: grey;
+                color: white;
+                padding: 20px;
+            }
+
+            .content{
+                margin-left: 220px;
+                padding: 20px;
+                background-color: lightyellow;
+            }
+
+            .footer{
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <div class="navbar">
+            Task 7- Fixed nav
+        </div>
+         
+
+        <h2>Task 1-Block Element</h2>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <h2>Task 2-Inline span</h2>
+        <span>span 1</span>
+        <span>span 2</span>
+
+        <h2>Task 3-Inline block</h2>
+        <div class="inline-box">Box 1</div>
+        <div class="inline-box">Box 2</div>
+        <div class="inline-box">Box 3</div>
+
+        <h2>Task 4-Display none</h2>
+        <p>This paragraph is visible.</p>
+        <p class="hide">This paragraph is hidden.</p>
+
+        <h2>Task 5-Relative Position</h2>
+        <div class="relative-box">Relative</div>
+
+        <h2>Task 6-Absolute Position</h2>
+        <div class="parent">
+            Parent container
+        <div class="Absolute">Absolute</div>
+        </div>
+
+        <div class="sticky">Task 8-Sticky Header</div>
+        <div class="scroll">
+            <p>Scroll down to see the sticky header remain at the top.</p>
+            <p>Keep scrolling</p>
+            <p>More content</p>
+            <p>End of page.</p>
+        </div>
+
+        <h2>Display and position</h2>
+        <div class="task9">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="position-box">Position</div>
+        </div>
+           
+        <h2>Task 10</h2>
+            <div class="header">
+                Fixed header
+            </div>
+
+            <div class="layout">
+                <div class="sidebar">
+                    <h3>Sidebar</h3>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Comtact</p>
+                </div>
+
+                <div class="content">
+                    <h3>Content Area</h3>
+                    <p>This is the main content section.</p>
+                    <p>It uses a block layout beside the absolute sidebar.</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                Footer
+            </div>
+        </div>
+    </body>
+</html>
